@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0TCEZHdrj4ORVhixJZByLQ8COfJHByYXVfueMUvMIov29c+hNurWaABsQeVvS/81g8uoGO/xPIJyhomhEVnGFg==",
+  "dgSpecHash": "gvSfc+HvR3Ufx5Wz1b9DB1vBRCtgKhG/sQCiowZjLCaxU7PD1/ZnorF5AbyovogUC2hJfxdmo+EPNI5ARRwxPQ==",
   "success": true,
-  "projectFilePath": "C:\\Hassan\\Softs\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj",
+  "projectFilePath": "C:\\Hassan\\Softs\\GADSA\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hbahm\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Hbahm\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

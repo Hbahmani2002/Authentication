@@ -123,6 +123,25 @@ namespace AngularAuthApi.Controllers
 
 
         }
+        [Authorize]
+        [HttpPost("getphotobyusername/{username}")]
+        public async Task<IActionResult> Getphotobyusername(string username)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(a => a.UserName == username);
+            if (user is null)
+                return BadRequest(new
+                {
+                    StatusCode = 404,
+                    message = "USer Not Found!!!"
+                });
+            return Ok(new
+            {
+                StatusCode = 200,
+                message = user.UserName
+            });
+        }
+
+
         [HttpPost("send-reset-email/{email}")]
         public async Task<IActionResult> SendEmail(string email)
         {

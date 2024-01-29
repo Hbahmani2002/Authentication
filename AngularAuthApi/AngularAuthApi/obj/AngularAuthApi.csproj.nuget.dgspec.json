@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Hassan\\Softs\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj": {}
+    "C:\\Hassan\\Softs\\GADSA\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj": {}
   },
   "projects": {
-    "C:\\Hassan\\Softs\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj": {
+    "C:\\Hassan\\Softs\\GADSA\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Hassan\\Softs\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj",
+        "projectUniqueName": "C:\\Hassan\\Softs\\GADSA\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj",
         "projectName": "AngularAuthApi",
-        "projectPath": "C:\\Hassan\\Softs\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj",
+        "projectPath": "C:\\Hassan\\Softs\\GADSA\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj",
         "packagesPath": "C:\\Users\\Hbahm\\.nuget\\packages\\",
-        "outputPath": "C:\\Hassan\\Softs\\Authentication\\AngularAuthApi\\AngularAuthApi\\obj\\",
+        "outputPath": "C:\\Hassan\\Softs\\GADSA\\Authentication\\AngularAuthApi\\AngularAuthApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
