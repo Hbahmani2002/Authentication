@@ -124,7 +124,7 @@ namespace AngularAuthApi.Controllers
 
         }
         [Authorize]
-        [HttpPost("getphotobyusername/{username}")]
+        [HttpGet("getphotobyusername/{username}")]
         public async Task<IActionResult> Getphotobyusername(string username)
         {
             var user = await _context.Users.FirstOrDefaultAsync(a => a.UserName == username);
@@ -137,7 +137,7 @@ namespace AngularAuthApi.Controllers
             return Ok(new
             {
                 StatusCode = 200,
-                message = user.UserName
+                message = user.UserPhoto
             });
         }
 
