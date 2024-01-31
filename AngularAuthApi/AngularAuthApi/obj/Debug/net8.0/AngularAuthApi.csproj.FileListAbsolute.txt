@@ -281,3 +281,12 @@ C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\obj\Debug\net
 C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\obj\Debug\net8.0\AngularAuthApi.pdb
 C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\obj\Debug\net8.0\AngularAuthApi.genruntimeconfig.cache
 C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\obj\Debug\net8.0\ref\AngularAuthApi.dll
+C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\bin\Debug\net8.0\Serilog.dll
+C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi\bin\Debug\net8.0\Serilog.Sinks.File.dll

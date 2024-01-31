@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.IdentityModel.Tokens;
+using Org.BouncyCastle.Asn1.Ocsp;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -28,13 +29,15 @@ namespace AngularAuthApi.Controllers
         
         private readonly IUserService _userservice;
             private readonly IUserRepository _userrepository;
-        public UserController(IUserService userservice,IUserRepository userrepository)
+        private readonly ILogger<UserController> _logger;
+        public UserController(ILogger<UserController> logger,IUserService userservice,IUserRepository userrepository)
         {
           
             _userservice = userservice;
             _userrepository = userrepository;
+            _logger = logger;
 
-            }
+        }
         [HttpPost("authenticate")]
         public async Task<IActionResult> Authenticate([FromBody] User userObj)
         {
@@ -45,9 +48,9 @@ namespace AngularAuthApi.Controllers
                 return NotFound(new { Message = "User not found!" });
             if (!PasswordHasher.VerifyPassword(userObj.Password,user.Password))
                 return BadRequest(new { Message = "Password is Incorrect" });
-          
-            
-            
+
+
+            _logger.LogInformation($"User [{user.UserName}] logged in the system.");
             return Ok(new tokenApiDto
             {
                 AccessToken =user.Token,
@@ -88,6 +91,7 @@ namespace AngularAuthApi.Controllers
             userObj.Role = "User";
             userObj.Token = "";
             await _userservice.RegisterUser(userObj);
+            _logger.LogInformation($"User [{userObj.UserName}] Registered in System.");
             return Ok(new {
                 message = "user Registered!!"
             });
@@ -110,8 +114,8 @@ namespace AngularAuthApi.Controllers
             var user = await _userservice.Refresh(username);
             if (user is null || user.RefreshToken != refreshToken || user.RefreshTokenExpireTime <= DateTime.Now)
                 return BadRequest("Invalid Request");
-           
-           
+
+            _logger.LogInformation($"User [{user.UserName}] Token Refreshed.");
             return Ok(new tokenApiDto
             {
                 AccessToken =user.Token,
@@ -132,6 +136,7 @@ namespace AngularAuthApi.Controllers
                     StatusCode = 404,
                     message = "USer Not Found!!!"
                 });
+
             return Ok(new
             {
                 StatusCode = 200,
@@ -150,8 +155,8 @@ namespace AngularAuthApi.Controllers
                     statusCode = 404,
                     message = "Email does not exist"
                 });
-           
-           
+
+            _logger.LogInformation($"User [{user.UserName}] Sended Email .");
             return Ok(new
             {
                 StatusCode = 200,
@@ -181,8 +186,8 @@ namespace AngularAuthApi.Controllers
                     Message = "invalid reset link"
                 });
             }
-           
-            
+
+            _logger.LogInformation($"User [{user.UserName}] Password has Reset.");
             return Ok(new
             {
                 StatusCode=200,
