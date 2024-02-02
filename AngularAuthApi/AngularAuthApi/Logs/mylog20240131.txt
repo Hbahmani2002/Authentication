@@ -1,0 +1,37 @@
+2024-01-31 11:36:54.501 +00:00 [INF] User profile is available. Using 'C:\Users\Hbahm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 11:36:54.878 +00:00 [INF] Now listening on: http://localhost:5053
+2024-01-31 11:36:54.883 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 11:36:54.885 +00:00 [INF] Hosting environment: Development
+2024-01-31 11:36:54.887 +00:00 [INF] Content root path: C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi
+2024-01-31 11:37:53.465 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/ - null null
+2024-01-31 11:37:53.534 +00:00 [WRN] Failed to determine the https port for redirect.
+2024-01-31 11:37:53.586 +00:00 [INF] HTTP GET / responded 404 in 0.7182 ms
+2024-01-31 11:37:53.661 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/ - 404 0 null 199.328ms
+2024-01-31 11:37:53.683 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5053/, Response status code: 404
+2024-01-31 11:38:25.858 +00:00 [INF] Application is shutting down...
+2024-01-31 11:39:18.210 +00:00 [INF] User profile is available. Using 'C:\Users\Hbahm\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-31 11:39:18.396 +00:00 [INF] Now listening on: http://localhost:5053
+2024-01-31 11:39:18.399 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-31 11:39:18.401 +00:00 [INF] Hosting environment: Development
+2024-01-31 11:39:18.401 +00:00 [INF] Content root path: C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi
+2024-01-31 11:39:19.110 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/swagger - null null
+2024-01-31 11:39:19.244 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/swagger - 301 0 null 134.7998ms
+2024-01-31 11:39:19.288 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/swagger/index.html - null null
+2024-01-31 11:39:19.594 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/swagger/index.html - 200 null text/html;charset=utf-8 306.2881ms
+2024-01-31 11:39:19.647 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/swagger/swagger-ui-bundle.js - null null
+2024-01-31 11:39:19.647 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/swagger/swagger-ui.css - null null
+2024-01-31 11:39:19.656 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/swagger/swagger-ui-standalone-preset.js - null null
+2024-01-31 11:39:19.698 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-01-31 11:39:19.699 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-01-31 11:39:19.704 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 48.3867ms
+2024-01-31 11:39:19.705 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/swagger/swagger-ui.css - 200 143943 text/css 58.4077ms
+2024-01-31 11:39:19.740 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-31 11:39:19.755 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 14.5272ms
+2024-01-31 11:39:19.776 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-01-31 11:39:19.777 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 130.0591ms
+2024-01-31 11:39:20.495 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/swagger/v1/swagger.json - null null
+2024-01-31 11:39:20.585 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5053/swagger/favicon-32x32.png - null null
+2024-01-31 11:39:20.590 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-01-31 11:39:20.592 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/swagger/favicon-32x32.png - 200 628 image/png 6.4674ms
+2024-01-31 11:39:20.784 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5053/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 287.2121ms
+2024-01-31 11:41:18.791 +00:00 [INF] Application is shutting down...

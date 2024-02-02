@@ -148,7 +148,7 @@ namespace AngularAuthApi.Infrastructure.Repository
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = Identity,
-                Expires = DateTime.Now.AddSeconds(10),
+                Expires = DateTime.Now.AddHours(1),
                 SigningCredentials = credential
             };
             var token = jwtTokenHandler.CreateToken(tokenDescriptor);

@@ -211,25 +211,25 @@ namespace AngularAuthApi.Controllers
               
 
         }
-        private string CreateJwt(User user)
-        {
-            var jwtTokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes("9aE$5sG#2vP!1qW&8mZ*4cX@7oL%3iB+6dY");
-            var Identity = new ClaimsIdentity(new Claim[]
-            {
-                new Claim(ClaimTypes.Role,user.Role),
-                new Claim(ClaimTypes.Name,user.UserName)
-            });
-            var credential = new SigningCredentials(new SymmetricSecurityKey(key),SecurityAlgorithms.HmacSha256);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = Identity,
-                Expires = DateTime.Now.AddSeconds(10),
-                SigningCredentials = credential
-            };
-            var token = jwtTokenHandler.CreateToken(tokenDescriptor);
-            return jwtTokenHandler.WriteToken(token);
-        }
+        //private string CreateJwt(User user)
+        //{
+        //    var jwtTokenHandler = new JwtSecurityTokenHandler();
+        //    var key = Encoding.ASCII.GetBytes("9aE$5sG#2vP!1qW&8mZ*4cX@7oL%3iB+6dY");
+        //    var Identity = new ClaimsIdentity(new Claim[]
+        //    {
+        //        new Claim(ClaimTypes.Role,user.Role),
+        //        new Claim(ClaimTypes.Name,user.UserName)
+        //    });
+        //    var credential = new SigningCredentials(new SymmetricSecurityKey(key),SecurityAlgorithms.HmacSha256);
+        //    var tokenDescriptor = new SecurityTokenDescriptor
+        //    {
+        //        Subject = Identity,
+        //        Expires = DateTime.Now.AddSeconds(10),
+        //        SigningCredentials = credential
+        //    };
+        //    var token = jwtTokenHandler.CreateToken(tokenDescriptor);
+        //    return jwtTokenHandler.WriteToken(token);
+        //}
         
         private ClaimsPrincipal GetPrincipleFromExpiredToken(string token)
         {
