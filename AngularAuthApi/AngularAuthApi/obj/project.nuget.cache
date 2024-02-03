@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L44rRfLgDBd1AAKlWRYhR9N9O1Y9J2PlUT0Dc4Zj6zk4u7WbordAJLys1IB51sYCJ1O8qMBuSMI/H1Pet474ZQ==",
+  "dgSpecHash": "gJku64lbZdH/sIQ/4/ONvIixRJaHqefm6HqVZUcpclL6X6oRcVKriCe++RNymESEI6AWEX0ciTrGCE7f8WHNXQ==",
   "success": true,
   "projectFilePath": "C:\\Hassan\\Softs\\GADSA\\Authentication\\AngularAuthApi\\AngularAuthApi\\AngularAuthApi.csproj",
   "expectedPackageFiles": [
@@ -60,7 +60,7 @@
     "C:\\Users\\Hbahm\\.nuget\\packages\\serilog.extensions.logging\\8.0.0\\serilog.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\Hbahm\\.nuget\\packages\\serilog.formatting.compact\\2.0.0\\serilog.formatting.compact.2.0.0.nupkg.sha512",
     "C:\\Users\\Hbahm\\.nuget\\packages\\serilog.settings.configuration\\8.0.0\\serilog.settings.configuration.8.0.0.nupkg.sha512",
-    "C:\\Users\\Hbahm\\.nuget\\packages\\serilog.sinks.console\\5.0.0\\serilog.sinks.console.5.0.0.nupkg.sha512",
+    "C:\\Users\\Hbahm\\.nuget\\packages\\serilog.sinks.console\\5.0.1\\serilog.sinks.console.5.0.1.nupkg.sha512",
     "C:\\Users\\Hbahm\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\Hbahm\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\Hbahm\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",

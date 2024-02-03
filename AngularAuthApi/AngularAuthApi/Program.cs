@@ -46,12 +46,15 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddSerilog();
 builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
 {
     loggerConfiguration
         .ReadFrom.Configuration(hostingContext.Configuration)
         .WriteTo.Console()
-        .WriteTo.File("logs/mylog.txt", rollingInterval: RollingInterval.Day);
+        .WriteTo.File("logs/log-.txt", 
+                        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss} [{Level}] {Message}{NewLine}",
+                        rollingInterval: RollingInterval.Day);
 });
 builder.Services.AddDbContext<ApiDbContext>(options =>
 {
@@ -97,6 +100,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseSerilogRequestLogging();
+
 app.MapControllers();
 
 app.Run();
