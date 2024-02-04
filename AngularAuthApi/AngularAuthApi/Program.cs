@@ -48,6 +48,9 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IApiRepository, ApiRepository>();
+builder.Services.AddScoped<IApiService, ApiService>();
+
 builder.Services.AddSerilog();
 builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
 {
