@@ -7,6 +7,8 @@ using AngularAuthApi.Models;
 using AngularAuthApi.Models.Dto;
 using AngularAuthApi.UriliryService;
 using Azure.Core;
+using iText.Kernel.Pdf.Canvas.Parser;
+using iText.Kernel.Pdf;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +21,8 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Drawing;
 
 namespace AngularAuthApi.Controllers
 {
@@ -62,7 +66,87 @@ namespace AngularAuthApi.Controllers
                 return NotFound();
             }
         }
+        [Authorize]
+        [HttpGet("searchFiles/{searchString}")]
+        public async Task<IActionResult> SearchFiles(string searchString)
+        {
+            try
+            {
+                string directoryPath = _webHostEnvironment.ContentRootPath + "\\Docs\\";
+                List<string> matchingFiles = new List<string>();
+                List<string> matchingFilesDocx = new List<string>();
+                List<string> filesContainingString = SearchPdfFiles(directoryPath, searchString);
 
+                
+                foreach (var filePath in filesContainingString)
+                {
+                    matchingFiles.Add(filePath);
+                }
 
+                
+                return Ok(matchingFiles);
+                
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+        }
+        static List<string> SearchPdfFiles(string directoryPath, string searchString)
+        {
+            List<string> matchingFiles = new List<string>();
+
+            try
+            {
+                // Get all PDF files in the directory and its subdirectories
+                string[] files = Directory.GetFiles(directoryPath, "*.pdf", SearchOption.AllDirectories);
+
+                foreach (var filePath in files)
+                {
+                    // Search for the string in the PDF file
+                    if (PdfContainsString(filePath, searchString))
+                    {
+                        matchingFiles.Add(filePath);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+
+            return matchingFiles;
+        }
+
+        static bool PdfContainsString(string filePath, string searchString)
+        {
+            try
+            {
+                using (PdfReader pdfReader = new PdfReader(filePath))
+                {
+                    using (PdfDocument pdfDocument = new PdfDocument(pdfReader))
+                    {
+                        for (int pageNum = 1; pageNum <= pdfDocument.GetNumberOfPages(); pageNum++)
+                        {
+                            // Extract text from the PDF page
+                            string pageText = PdfTextExtractor.GetTextFromPage(pdfDocument.GetPage(pageNum));
+
+                            // Check if the string is present in the page text
+                            if (pageText.Contains(searchString))
+                            {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error processing PDF file {filePath}: {ex.Message}");
+            }
+
+            return false;
+        }
+       
     }
 }
