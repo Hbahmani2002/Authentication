@@ -10,6 +10,8 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 using Serilog;
+using AngularAuthApi.Helpers;
+using System.Diagnostics;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -58,7 +60,7 @@ builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
 });
 builder.Services.AddDbContext<ApiDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("sqlconnectionstring"));
+    options.UseSqlServer(DecodeSqlPath.DecodeSql(builder.Configuration.GetConnectionString("sqlconnectionstring")));
 });
 builder.Services.AddCors(option =>
 {

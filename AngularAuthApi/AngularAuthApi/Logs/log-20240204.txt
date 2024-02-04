@@ -1,0 +1,139 @@
+2024-02-04 07:25:33 [Information] User profile is available. Using '"C:\Users\Hbahm\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-04 07:25:35 [Information] Now listening on: "https://localhost:7006"
+2024-02-04 07:25:35 [Information] Now listening on: "http://localhost:5053"
+2024-02-04 07:25:35 [Information] Application started. Press Ctrl+C to shut down.
+2024-02-04 07:25:35 [Information] Hosting environment: "Development"
+2024-02-04 07:25:35 [Information] Content root path: "C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi"
+2024-02-04 07:25:37 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - null null
+2024-02-04 07:25:38 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 786.6334ms
+2024-02-04 07:25:38 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-02-04 07:25:38 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - null null
+2024-02-04 07:25:38 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - 200 13764 "application/javascript; charset=utf-8" 36.9983ms
+2024-02-04 07:25:39 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 217.9912ms
+2024-02-04 07:25:39 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - null null
+2024-02-04 07:25:39 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 337.9387ms
+2024-02-04 07:26:19 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7006""""/api/User/authenticate""" - "application/json" 372
+2024-02-04 07:26:19 [Information] CORS policy execution successful.
+2024-02-04 07:26:19 [Information] Executing endpoint '"AngularAuthApi.Controllers.UserController.Authenticate (AngularAuthApi)"'
+2024-02-04 07:26:19 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(AngularAuthApi.Models.User)" on controller "AngularAuthApi.Controllers.UserController" ("AngularAuthApi").
+2024-02-04 07:26:21 [Information] Executed action "AngularAuthApi.Controllers.UserController.Authenticate (AngularAuthApi)" in 2183.525ms
+2024-02-04 07:26:21 [Information] Executed endpoint '"AngularAuthApi.Controllers.UserController.Authenticate (AngularAuthApi)"'
+2024-02-04 07:26:21 [Error] HTTP "POST" "/api/User/authenticate" responded 500 in 2262.9266 ms
+2024-02-04 07:26:21 [Error] An unhandled exception has occurred while executing the request.
+2024-02-04 07:26:21 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7006""""/api/User/authenticate""" - 500 null "text/plain; charset=utf-8" 2694.0712ms
+2024-02-04 07:27:05 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7006""""/api/User/authenticate""" - "application/json" 372
+2024-02-04 07:27:05 [Information] CORS policy execution successful.
+2024-02-04 07:27:05 [Information] Executing endpoint '"AngularAuthApi.Controllers.UserController.Authenticate (AngularAuthApi)"'
+2024-02-04 07:27:05 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(AngularAuthApi.Models.User)" on controller "AngularAuthApi.Controllers.UserController" ("AngularAuthApi").
+2024-02-04 07:27:24 [Information] Executed action "AngularAuthApi.Controllers.UserController.Authenticate (AngularAuthApi)" in 18286.2544ms
+2024-02-04 07:27:24 [Information] Executed endpoint '"AngularAuthApi.Controllers.UserController.Authenticate (AngularAuthApi)"'
+2024-02-04 07:27:24 [Error] HTTP "POST" "/api/User/authenticate" responded 500 in 18315.9245 ms
+2024-02-04 07:27:24 [Error] An unhandled exception has occurred while executing the request.
+2024-02-04 07:27:24 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7006""""/api/User/authenticate""" - 500 null "text/plain; charset=utf-8" 18427.0022ms
+2024-02-04 07:27:50 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - null null
+2024-02-04 07:27:50 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 33.7207ms
+2024-02-04 07:27:50 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - null null
+2024-02-04 07:27:50 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-02-04 07:27:50 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - 200 13764 "application/javascript; charset=utf-8" 55.7583ms
+2024-02-04 07:27:50 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 83.7687ms
+2024-02-04 07:27:51 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - null null
+2024-02-04 07:27:51 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 120.3353ms
+2024-02-04 07:27:54 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - null null
+2024-02-04 07:27:54 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 24.7832ms
+2024-02-04 07:27:54 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-02-04 07:27:54 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - null null
+2024-02-04 07:27:54 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - 200 13764 "application/javascript; charset=utf-8" 13.9326ms
+2024-02-04 07:27:54 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 82.3854ms
+2024-02-04 07:27:54 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - null null
+2024-02-04 07:27:54 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 81.8655ms
+2024-02-04 07:28:17 [Information] User profile is available. Using '"C:\Users\Hbahm\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-04 07:28:18 [Information] Now listening on: "https://localhost:7006"
+2024-02-04 07:28:18 [Information] Now listening on: "http://localhost:5053"
+2024-02-04 07:28:18 [Information] Application started. Press Ctrl+C to shut down.
+2024-02-04 07:28:18 [Information] Hosting environment: "Development"
+2024-02-04 07:28:18 [Information] Content root path: "C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi"
+2024-02-04 07:28:20 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - null null
+2024-02-04 07:28:21 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 550.2423ms
+2024-02-04 07:28:21 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-02-04 07:28:21 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - 200 13764 "application/javascript; charset=utf-8" 27.0396ms
+2024-02-04 07:28:21 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - null null
+2024-02-04 07:28:21 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 165.7565ms
+2024-02-04 07:28:21 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - null null
+2024-02-04 07:28:22 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 334.4875ms
+2024-02-04 07:29:49 [Information] User profile is available. Using '"C:\Users\Hbahm\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-04 07:29:50 [Information] Now listening on: "https://localhost:7006"
+2024-02-04 07:29:50 [Information] Now listening on: "http://localhost:5053"
+2024-02-04 07:29:50 [Information] Application started. Press Ctrl+C to shut down.
+2024-02-04 07:29:50 [Information] Hosting environment: "Development"
+2024-02-04 07:29:50 [Information] Content root path: "C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi"
+2024-02-04 07:29:53 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - null null
+2024-02-04 07:29:53 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 571.2964ms
+2024-02-04 07:29:53 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-02-04 07:29:53 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - 200 13764 "application/javascript; charset=utf-8" 34.8009ms
+2024-02-04 07:29:53 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - null null
+2024-02-04 07:29:53 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 162.143ms
+2024-02-04 07:29:54 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - null null
+2024-02-04 07:29:54 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 286.3864ms
+2024-02-04 07:31:18 [Information] User profile is available. Using '"C:\Users\Hbahm\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-04 07:31:18 [Information] Now listening on: "https://localhost:7006"
+2024-02-04 07:31:18 [Information] Now listening on: "http://localhost:5053"
+2024-02-04 07:31:18 [Information] Application started. Press Ctrl+C to shut down.
+2024-02-04 07:31:18 [Information] Hosting environment: "Development"
+2024-02-04 07:31:18 [Information] Content root path: "C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi"
+2024-02-04 07:31:19 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - null null
+2024-02-04 07:31:20 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 585.4806ms
+2024-02-04 07:31:20 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-02-04 07:31:20 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - 200 13764 "application/javascript; charset=utf-8" 26.7175ms
+2024-02-04 07:31:20 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - null null
+2024-02-04 07:31:20 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 183.4022ms
+2024-02-04 07:31:20 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - null null
+2024-02-04 07:31:21 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 504.8281ms
+2024-02-04 07:32:24 [Information] User profile is available. Using '"C:\Users\Hbahm\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-04 07:32:25 [Information] Now listening on: "https://localhost:7006"
+2024-02-04 07:32:25 [Information] Now listening on: "http://localhost:5053"
+2024-02-04 07:32:25 [Information] Application started. Press Ctrl+C to shut down.
+2024-02-04 07:32:25 [Information] Hosting environment: "Development"
+2024-02-04 07:32:25 [Information] Content root path: "C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi"
+2024-02-04 07:32:46 [Information] User profile is available. Using '"C:\Users\Hbahm\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-04 07:32:47 [Information] Now listening on: "https://localhost:7006"
+2024-02-04 07:32:47 [Information] Now listening on: "http://localhost:5053"
+2024-02-04 07:32:47 [Information] Application started. Press Ctrl+C to shut down.
+2024-02-04 07:32:47 [Information] Hosting environment: "Development"
+2024-02-04 07:32:47 [Information] Content root path: "C:\Hassan\Softs\GADSA\Authentication\AngularAuthApi\AngularAuthApi"
+2024-02-04 07:32:48 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - null null
+2024-02-04 07:32:49 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 607.7608ms
+2024-02-04 07:32:49 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - null null
+2024-02-04 07:32:49 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2024-02-04 07:32:49 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_framework/aspnetcore-browser-refresh.js""" - 200 13764 "application/javascript; charset=utf-8" 46.5615ms
+2024-02-04 07:32:49 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 141.9598ms
+2024-02-04 07:32:49 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - null null
+2024-02-04 07:32:49 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7006""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 315.064ms
+2024-02-04 07:33:10 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7006""""/api/User/authenticate""" - "application/json" 380
+2024-02-04 07:33:10 [Information] CORS policy execution successful.
+2024-02-04 07:33:10 [Information] Executing endpoint '"AngularAuthApi.Controllers.UserController.Authenticate (AngularAuthApi)"'
+2024-02-04 07:33:11 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(AngularAuthApi.Models.User)" on controller "AngularAuthApi.Controllers.UserController" ("AngularAuthApi").
+2024-02-04 07:33:19 [Information] Executed DbCommand ("256"ms) [Parameters=["@__userObj_UserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RefreshToken], [u].[RefreshTokenExpireTime], [u].[ResetPasswordExpiry], [u].[ResetPasswordToken], [u].[Role], [u].[Token], [u].[UserName], [u].[UserPhoto]
+FROM [users] AS [u]
+WHERE [u].[UserName] = @__userObj_UserName_0"
+2024-02-04 07:33:19 [Information] Executed DbCommand ("81"ms) [Parameters=["@__refreshToken_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [users] AS [u]
+        WHERE [u].[RefreshToken] = @__refreshToken_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+2024-02-04 07:33:20 [Information] Executed DbCommand ("81"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [users] SET [RefreshToken] = @p0, [RefreshTokenExpireTime] = @p1, [Token] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;"
+2024-02-04 07:33:20 [Information] User [Dimitry] logged in the system.
+2024-02-04 07:33:20 [Information] Executing "OkObjectResult", writing value of type '"AngularAuthApi.Models.Dto.tokenApiDto"'.
+2024-02-04 07:33:20 [Information] Executed action "AngularAuthApi.Controllers.UserController.Authenticate (AngularAuthApi)" in 9103.5709ms
+2024-02-04 07:33:20 [Information] Executed endpoint '"AngularAuthApi.Controllers.UserController.Authenticate (AngularAuthApi)"'
+2024-02-04 07:33:20 [Information] HTTP "POST" "/api/User/authenticate" responded 200 in 9231.8288 ms
+2024-02-04 07:33:20 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7006""""/api/User/authenticate""" - 200 null "application/json; charset=utf-8" 9488.8568ms
+2024-02-04 07:33:36 [Information] User profile is available. Using '"C:\Users\Hbahm\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
